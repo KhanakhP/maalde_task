@@ -165,14 +165,6 @@ MAE: 12.50
 R2 score: 0.326
 ```
 
-Skipped product codes:
-
-```text
-00500001
-10028003
-10029409
-```
-
 `data/processed_data.csv` keeps all products from Excel. `data/model_dataset.csv`, `data/X.npy`, and `data/y.npy` include only products that have matching images.
 
 ## Sample Outputs
@@ -181,11 +173,11 @@ Use this format when adding screenshots or prediction examples:
 
 ```text
 Sample Output 1
-Image/Product Code: 100632
+Image/Product Code: 10027632
 Input Rate: 750
 Predicted Quantity: 13
 Actual Quantity: 12
-Screenshot: <img width="1919" height="1014" alt="Screenshot 2026-05-04 145923" src="https://github.com/user-attachments/assets/c2569fe0-ff10-4706-8638-d0f8205c3adf" />
+![Prediction 1](predicted_10027632.png)
 
 ```
 
@@ -197,7 +189,7 @@ Image/Product Code: 10029440
 Input Rate: 1125
 Predicted Quantity: 12
 Actual Quantity, if known: 10
-Screenshot: <img width="1919" height="983" alt="Screenshot 2026-05-04 150059" src="https://github.com/user-attachments/assets/6bfd97c6-8bc5-4c69-b00f-d8d1b17f69b8" />
+![Prediction 2](predicted_10029440.png)
 
 ```
 
