@@ -1,8 +1,8 @@
 # Product Demand Prediction Engine
 
-Full Name: `<your full name>`
+Full Name: `Khanakh Prajapati`
 
-Mobile No: `<your mobile number>`
+Mobile No: `9313212890`
 
 This project predicts how many units a new product design can sell using past sales data and product images.
 
@@ -181,42 +181,24 @@ Use this format when adding screenshots or prediction examples:
 
 ```text
 Sample Output 1
-Image/Product Code: <image filename or product code>
-Input Rate: <entered rate>
-Predicted Quantity: <predicted units>
-Actual Quantity, if known: <actual units or N/A>
-Screenshot: ![alt text](image.png)
+Image/Product Code: 100632
+Input Rate: 750
+Predicted Quantity: 13
+Actual Quantity: 12
+Screenshot: <img width="1919" height="1014" alt="Screenshot 2026-05-04 145923" src="https://github.com/user-attachments/assets/c2569fe0-ff10-4706-8638-d0f8205c3adf" />
+
 ```
 
 Example:
 
 ```text
-Sample Output 1
-Image/Product Code: 10016728.jpeg
-Input Rate: 875
-Predicted Quantity: 26 units
-Actual Quantity, if known: 24 units
-Screenshot: screenshots/sample_output_1.png
-```
-
-You can add more examples like this:
-
-```text
 Sample Output 2
-Image/Product Code:
-Input Rate:
-Predicted Quantity:
-Actual Quantity, if known:
-Screenshot:
-```
+Image/Product Code: 10029440
+Input Rate: 1125
+Predicted Quantity: 12
+Actual Quantity, if known: 10
+Screenshot: <img width="1919" height="983" alt="Screenshot 2026-05-04 150059" src="https://github.com/user-attachments/assets/6bfd97c6-8bc5-4c69-b00f-d8d1b17f69b8" />
 
-```text
-Sample Output 3
-Image/Product Code:
-Input Rate:
-Predicted Quantity:
-Actual Quantity, if known:
-Screenshot:
 ```
 
 ## UI Usage
