@@ -1,0 +1,12 @@
+pandas
+numpy
+openpyxl
+scikit-learn
+joblib
+torch
+torchvision
+pillow
+opencv-python
+pytesseract
+easyocr
+streamlit
