@@ -169,19 +169,14 @@ R2 score: 0.326
 
 ## Sample Outputs
 
-Use this format when adding screenshots or prediction examples:
-
 ```text
 Sample Output 1
 Image/Product Code: 10027632
 Input Rate: 750
 Predicted Quantity: 13
 Actual Quantity: 12
-![Prediction 1](predicted_10027632.png)
-
 ```
-
-Example:
+![Prediction 1](predicted_10027632.png)
 
 ```text
 Sample Output 2
@@ -189,9 +184,10 @@ Image/Product Code: 10029440
 Input Rate: 1125
 Predicted Quantity: 12
 Actual Quantity, if known: 10
+```
 ![Prediction 2](predicted_10029440.png)
 
-```
+
 
 ## UI Usage
 
