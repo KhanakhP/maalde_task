@@ -9,4 +9,10 @@ pillow
 opencv-python
 pytesseract
 easyocr
+paddleocr
 streamlit
+xgboost
+transformers==4.37.2
+fashion-clip
+tqdm
+matplotlib

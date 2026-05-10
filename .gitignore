@@ -1,5 +1,29 @@
+# Virtual Environment
 .venv/
+
+# Python Cache
 __pycache__/
 *.pyc
-.torch/
-streamlit*.log
+
+# Streamlit Cache
+.streamlit/
+
+# Model Files
+*.pkl
+*.npy
+
+# OCR
+tesseract/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VSCode
+.vscode/
+
+# Logs
+*.log
