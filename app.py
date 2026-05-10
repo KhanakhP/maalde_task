@@ -43,15 +43,38 @@ uploaded_file = st.file_uploader(
 
 rate = st.number_input(
     "Enter Product Rate",
-    min_value=1.0,
-    value=1000.0
+    min_value=100.0,
+    value=500.0,
+    step=50.0
 )
+
+# ==========================================
+# RATE VALIDATION
+# ==========================================
+
+valid_rate = (
+    100 <= rate <= 1500
+)
+
+if not valid_rate:
+
+    st.warning(
+        "Rate must be between 100 and 1500"
+    )
 
 # ==========================================
 # PREDICT BUTTON
 # ==========================================
 
-if st.button("Predict Demand"):
+predict_clicked = st.button(
+    "Predict Demand",
+    disabled=not valid_rate
+)
+# ==========================================
+# PREDICT LOGIC
+# ==========================================
+
+if predict_clicked:
 
     # --------------------------------------
     # CHECK IMAGE

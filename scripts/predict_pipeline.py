@@ -20,7 +20,8 @@ def predict_demand(image_path, rate):
     #validate image
     validation = validate_dress(image_path)
     if not validation["is_valid"]:
-        return{"success":False, "message":validation("Invalid image." "Please upload dress-related image"), "prediction":None}
+        return{"success":False, "message":("Invalid image." "Please upload dress-related image"), "prediction":None}
+    
     #Generate embeddings
     embedding = fclip.encode_images([image_path], batch_size=1)
     embedding = embedding.squeeze()
@@ -42,6 +43,7 @@ def predict_demand(image_path, rate):
 
     similarity_result = similarity_predict(
         reduced_embedding[0],
+        rate,
         top_k=5
     )
 

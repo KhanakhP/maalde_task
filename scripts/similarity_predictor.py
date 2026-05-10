@@ -27,6 +27,7 @@ print("Similarity database loaded")
 
 def similarity_predict(
     query_embedding,
+    rate,
     top_k=5
 ):
 
@@ -64,19 +65,33 @@ def similarity_predict(
 
         qty = row["qty"]
 
+        retrieved_rate = row["rate"]
+        
         code = row["code"]
 
         image_path = row["image_path"]
 
+        # ======================================
+        # PRICE-AWARE SIMILARITY
+        # ======================================
+
+        price_diff = abs(rate - retrieved_rate)
+
+        price_similarity = 1 / (1 + (price_diff / 1000))
+
+        adjusted_similarity = (
+            similarity_score * price_similarity
+        )
+        
         # ----------------------------------
         # WEIGHTED DEMAND
         # ----------------------------------
 
         weighted_sum += (
-            similarity_score * qty
+            adjusted_similarity * qty
         )
 
-        similarity_sum += similarity_score
+        similarity_sum += adjusted_similarity
 
         # ----------------------------------
         # STORE RESULT
@@ -89,7 +104,7 @@ def similarity_predict(
             "qty": qty,
 
             "similarity": float(
-                similarity_score
+                adjusted_similarity
             ),
 
             "image_path": image_path
